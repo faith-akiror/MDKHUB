@@ -42,21 +42,40 @@ h1, h2, h3, .brand {
     transition: 0.3s;
 }
 
-.logo-container .brand {
-    font-size: 1.5rem;
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-container .logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text .brand {
+    font-size: 1.4rem;
     text-decoration: none;
     color: var(--white);
     font-weight: 700;
+    line-height: 1.2;
 }
 
-.logo-container span {
+.logo-text .brand span {
     color: var(--primary);
 }
 
 .tagline-mini {
-    display: block;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     color: var(--text-light);
+    letter-spacing: 1px;
+    text-transform: none;
 }
 
 .nav-links {
