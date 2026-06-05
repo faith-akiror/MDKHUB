@@ -145,6 +145,7 @@ section {
 @media (max-width: 768px) {
     .contact-container {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 
@@ -317,6 +318,18 @@ footer {
 
 /* Mobile Responsiveness Improvements */
 @media (max-width: 768px) {
+    section {
+        padding: 30px 5%;
+    }
+
+    .section-title {
+        margin-bottom: 20px;
+    }
+
+    .glass-card {
+        padding: 25px !important;
+    }
+
     #navbar {
         padding: 10px 20px;
         position: relative;
